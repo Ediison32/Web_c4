@@ -22,6 +22,7 @@ const routes: Routes = [
     component: DeleteComponent,
   },{
     path: '',
+    pathMatch: 'full',
     redirectTo: 'get'
   }
 ];

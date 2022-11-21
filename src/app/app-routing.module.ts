@@ -19,18 +19,18 @@ const routes: Routes = [
     loadChildren: () => import('./modulos/seguridad/seguridad.module').then(m => m.SeguridadModule)
     
   },{
+    path: 'vuelos',
+    loadChildren: () => import('./modulos/vuelos/vuelos.module').then(m => m.VuelosModule)
+  },{
     path: 'admin',
     loadChildren: () => import('./modulos/admin/admin.module').then(m => m.AdminModule)  // se trae todo lo que esta en esta ruta 
-  },{
-    path: 'aeropuertos',
-    loadChildren: () => import('./modulos/aeropuertos/aeropuertos.module').then(m => m.AeropuertosModule),
-    component: IndexComponent
   },{
     path: 'rutas',
     loadChildren: () => import('./modulos/rutas/rutas.module').then(m => m.RutasModule)
   },{
-    path: 'vuelos',
-    loadChildren: () => import('./modulos/vuelos/vuelos.module').then(m => m.VuelosModule)
+    path: 'aeropuertos',
+    loadChildren: () => import('./modulos/aeropuertos/aeropuertos.module').then(m => m.AeropuertosModule),
+    
   },
 
  //------------------->

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateComponent } from './usuarios/create/create.component';
 import { EditComponent } from './usuarios/edit/edit.component';
 import { GetComponent } from './usuarios/get/get.component';
+import { DeleteComponent } from './usuarios/delete/delete.component';
 
 const routes: Routes = [
 
@@ -15,6 +16,9 @@ const routes: Routes = [
   },{
     path: 'get',
     component: GetComponent,
+  },{
+    path: 'delete',
+    component: DeleteComponent,
   },{
     path: '',
     pathMatch: 'full',
